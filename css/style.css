@@ -181,14 +181,33 @@ footer {
 }
 
 /* Responsive CSS ======================================*/
-@media (max-width: 768px) {
-    /* Bump up size of carousel content */
-    .navbar-brand {
+@media (max-width: 991px) {
+    #logo-img {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+    .main-title {
+        font-size: 1.7rem;
+    }
+
+    .sub-title {
         display: none;
     }
 
     .carousel {
-        margin: 6.2rem auto;
+        margin: 4rem auto;
+    }
+
+    .divider {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Bump up size of carousel content */
+    .navbar-brand {
+        display: none;
     }
 
     .carousel-indicators li {
@@ -220,11 +239,6 @@ footer {
 }
 
 @media (max-width: 420px) {
-    #logo-img {
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-
     .carousel {
         margin: 3.7rem auto;
     }

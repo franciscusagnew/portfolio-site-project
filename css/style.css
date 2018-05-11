@@ -1,5 +1,6 @@
 body {
 	position: relative;
+    font-size: 18px;
 }
 
 .bg-black {
@@ -7,7 +8,7 @@ body {
 }
 
 .navbar {
-    border-bottom: 4px solid #38A5DB;
+    border-bottom: 4px solid rgba(56, 165, 219, 1);
 }
 
 .main-title {
@@ -18,13 +19,13 @@ body {
 .sub-title {
     font-size: 1.8rem;
     text-align: right;
-    color: #38A5DB;
+    color: rgba(56, 165, 219, 1);
 }
 
 #logo-img {
     width: 5rem;
     height: 5rem;
-    margin-right: 20px;
+    margin-right: 1.1rem;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -36,16 +37,23 @@ body {
 }
 
 .nav-link {
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .divider {
     margin: 6rem auto;
-    border: 1px solid #ccc;
+    border: 0.05rem solid rgba(204, 204, 204, 1);
 }
 
 .card {
     margin: 1rem;
+    min-height: 100%;
+    text-overflow: ellipsis;
+    padding-bottom: 2.6rem;
+}
+
+.card-footer {
+    background: rgba(56, 165, 219, 1);
 }
 
 .card-text {
@@ -54,13 +62,37 @@ body {
 
 .card-title {
     text-align: center;
-    color: #38A5DB!important;
+    color: rgba(56, 165, 219, 1)!important;
+}
+
+.card-btn {
+    color: rgba(255, 255, 255, 1) !important;
+    background-color: rgba(56, 165, 219, 1);
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 1rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    align-items: flex-start;
+    cursor: pointer;
+    border: none;
+}
+
+.card-btn:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(51, 51, 51, 1);
 }
 
 .section-header {
     text-align: center;
     font-size: 3.2rem;
-    color: #333;
+    color: rgba(51, 51, 51, 1);
 }
 
 .text-muted {
@@ -69,9 +101,9 @@ body {
 }
 
 .header-divider {
-    border: 2px solid #38A5DB;
-    max-width: 600px;
-    margin-bottom: 50px;
+    border: 0.1rem solid rgba(56, 165, 219, 1);
+    max-width: 33.3rem;
+    margin-bottom: 2.7rem;
 }
 
 a {
@@ -79,7 +111,7 @@ a {
 }
 
 .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
-    color: #38A5DB;
+    color: rgba(56, 165, 219, 1);
     font-weight: bold;
 }
 
@@ -92,28 +124,27 @@ footer {
     margin-top: 5rem;
     padding-bottom: 3rem;
     background-color: rgba(0, 0, 0, .9);
-    color: #38A5DB;
-    font-size: 18px;
+    color: rgba(56, 165, 219, 1);
     text-align: center;
-    border-top: 4px solid #38A5DB;
+    border-top: 0.2rem solid rgba(56, 165, 219, 1);
 }
 
 .fa-caret-up {
-    font-size: 32px;
+    font-size: 1.7rem;
 }
 
 .back-btn {
-    color: #fff;
-    background-color: #38A5DB;
-    border-color: #fff;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(56, 165, 219, 1);
+    border-color: rgba(255, 255, 255, 1);
     position: relative;
-    top: -25px;
+    top: -1.38rem;
 }
 
 .back-btn:hover {
-    color: #fff;
-    background-color: #333;
-    border-color: #fff;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(51, 51, 51, 1);
+    border-color: rgba(255, 255, 255, 1);
 }
 
 
@@ -123,22 +154,21 @@ footer {
 }
 
 .btn-brand {
-    color: #fff;
-    background-color: #38A5DB;
-    border-color: #fff;
-    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(56, 165, 219, 1);
+    border-color: rgba(255, 255, 255, 1);
+    margin-bottom: 2.2rem;
 }
 
 .btn-brand:hover {
-    color: #fff;
-    background-color: #333;
-    border-color: #fff;
-    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(51, 51, 51, 1);
+    border-color: rgba(255, 255, 255, 1);
 }
 
 .fa-caret-left,
 .fa-caret-right {
-    font-size: 48px;
+    font-size: 2.6rem;
     color: rgba(255, 255, 255, .5);
 }
 
@@ -148,16 +178,16 @@ footer {
 }
 
 .carousel-indicators li {
-    background-color: #fff;
-    border: 2px solid #38A5DB;
+    background-color: rgba(255, 255, 255, 1);
+    border: 0.1rem solid rgba(56, 165, 219, 1);
     border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    margin: 0px 20px;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: 0 1.1rem;
 }
 
 .carousel-indicators .active {
-    background-color: #38A5DB;
+    background-color: rgba(56, 165, 219, 1);
 }
 
 /* Responsive CSS ======================================*/

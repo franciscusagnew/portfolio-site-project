@@ -1,0 +1,207 @@
+body {
+	position: relative;
+}
+
+.bg-black {
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.navbar {
+    border-bottom: 4px solid #38A5DB;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.sub-title {
+    font-size: 1.8rem;
+    text-align: right;
+    color: #38A5DB;
+}
+
+#logo-img {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255, 1.0);
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255,255,255, 1.0);
+}
+
+.nav-link {
+    font-size: 18px;
+}
+
+.divider {
+    margin: 6rem auto;
+    border: 1px solid #ccc;
+}
+
+.card {
+    margin: 1rem;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.card-title {
+    text-align: center;
+    color: #38A5DB!important;
+}
+
+.section-header {
+    text-align: center;
+    font-size: 3.2rem;
+    color: #333;
+}
+
+.text-muted {
+    display: block;
+    line-height: 3rem;
+}
+
+.header-divider {
+    border: 2px solid #38A5DB;
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+
+a {
+    color: inherit;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #38A5DB;
+    font-weight: bold;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 5rem;
+    padding-bottom: 3rem;
+    background-color: rgba(0, 0, 0, .9);
+    color: #38A5DB;
+    font-size: 18px;
+    text-align: center;
+    border-top: 4px solid #38A5DB;
+}
+
+.fa-caret-up {
+    font-size: 32px;
+}
+
+.back-btn {
+    color: #fff;
+    background-color: #38A5DB;
+    border-color: #fff;
+    position: relative;
+    top: -25px;
+}
+
+.back-btn:hover {
+    color: #fff;
+    background-color: #333;
+    border-color: #fff;
+}
+
+
+/* Carousel ==========================================*/
+.carousel {
+    margin-top: 8.5rem;
+}
+
+.btn-brand {
+    color: #fff;
+    background-color: #38A5DB;
+    border-color: #fff;
+    margin-bottom: 40px;
+}
+
+.btn-brand:hover {
+    color: #fff;
+    background-color: #333;
+    border-color: #fff;
+    margin-bottom: 40px;
+}
+
+.fa-caret-left,
+.fa-caret-right {
+    font-size: 48px;
+    color: rgba(255, 255, 255, .5);
+}
+
+.fa-caret-left:hover,
+.fa-caret-right:hover {
+    color: rgba(56, 165, 219, 1);
+}
+
+.carousel-indicators li {
+    background-color: #fff;
+    border: 2px solid #38A5DB;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0px 20px;
+}
+
+.carousel-indicators .active {
+    background-color: #38A5DB;
+}
+
+/* Responsive CSS ======================================*/
+@media (max-width: 768px) {
+    /* Bump up size of carousel content */
+    .navbar-brand {
+        display: none;
+    }
+
+    .carousel {
+        margin: 6.2rem auto;
+    }
+
+    .carousel-indicators li {
+    	visibility: hidden;
+    }
+
+    .btn-brand {
+        color: transparent;
+        background-color: transparent;
+        border-color: transparent;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100vh;
+    }
+
+    .btn-brand:hover {
+        color: transparent;
+        background-color: transparent;
+        border-color: transparent;
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@media (max-width: 420px) {
+    #logo-img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .carousel {
+        margin: 3.7rem auto;
+    }    
+}

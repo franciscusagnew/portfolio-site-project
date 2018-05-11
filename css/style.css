@@ -49,14 +49,6 @@ body {
     margin: 1rem;
     min-height: 100%;
     text-overflow: ellipsis;
-    padding-bottom: 2.6rem;
-}
-
-.card-footer {
-    background: rgba(56, 165, 219, 1);
-}
-
-.card-text {
     text-align: center;
 }
 
@@ -147,7 +139,6 @@ footer {
     border-color: rgba(255, 255, 255, 1);
 }
 
-
 /* Carousel ==========================================*/
 .carousel {
     margin-top: 8.5rem;
@@ -233,5 +224,9 @@ footer {
 
     .carousel {
         margin: 3.7rem auto;
-    }    
+    }
+
+    .card-btn {
+        margin-bottom: 2.6rem;
+    }
 }

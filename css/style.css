@@ -32,7 +32,8 @@ body {
     color: rgba(255,255,255, 1.0);
 }
 
-.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
     color: rgba(255,255,255, 1.0);
 }
 
@@ -101,7 +102,10 @@ a {
     color: inherit;
 }
 
-.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show > .nav-link {
     color: rgba(56, 165, 219, 1);
     font-weight: bold;
 }
@@ -245,5 +249,9 @@ footer {
 @media (max-width: 420px) {
     .carousel {
         margin: 3.7rem auto;
+    }
+
+    .section-header {
+        font-size: 1.8rem;
     }
 }
